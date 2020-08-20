@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4022.30">
+	<Project ProjectGUID="{BED432B8-264C-4CF2-810A-7F1743F08535}" Target64Bit="true" ShowHideConfigurations="#x347">
+		<Plc>
+			<Project GUID="{739D96D2-267E-432B-B13E-EAB4489D85DD}" Name="CodeAnalysisTcLib" PrjFilePath="CodeAnalysisTcLib\CodeAnalysisTcLib.plcproj" TmcFilePath="CodeAnalysisTcLib\CodeAnalysisTcLib.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>CodeAnalysisTcLib Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+				</Instance>
+			</Project>
+		</Plc>
+	</Project>
+</TcSmProject>
