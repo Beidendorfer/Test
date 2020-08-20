@@ -26,7 +26,6 @@ AddTwo := Real1 + Real2;
 AddTwo := Real1 + Real2;
 AddTwo := Real1 + Real2;
 AddTwo := Real1 + Real2;
-AddTwo := Real1 + Real2;
 AddTwo := Real1 + Real2;]]></ST>
       </Implementation>
     </Method>
