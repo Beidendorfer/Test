@@ -22,6 +22,9 @@ END_VAR
       <Implementation>
         <ST><![CDATA[
 
+AddTwo := Real1 + Real2;
+AddTwo := Real1 + Real2;
+AddTwo := Real1 + Real2;
 
 AddTwo := Real1 + Real2;
 AddTwo := Real1 + Real2;
