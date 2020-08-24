@@ -6,7 +6,7 @@ VAR
 	//bJustASimpleBoolean : BOOL; // SA0033 - WARNING
 	sThisStringIsTooLong : STRING(6) := 'Hello world'; // SA0026 - ERROR
 	
-
+//Comment
 	nCounter : ULINT;
 
 
