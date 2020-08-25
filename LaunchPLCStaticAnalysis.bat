@@ -49,33 +49,36 @@ FOR /r %%i IN (*.tsproj) DO (
 rem Error handling of finding the files.
 
 IF NOT DEFINED VISUAL_STUDIO_SOLUTION_PATH (
-    echo Visual studio solution file path does not exist!
+    echo Visual studio solution file path does not exist! > error.txt
     GOTO Exit
 ) ELSE (
     echo VISUAL_STUDIO_SOLUTION_PATH found!
     echo The filepath to the visual studio solution file is: %VISUAL_STUDIO_SOLUTION_PATH%
 )
 IF NOT DEFINED TWINCAT_PROJECT_PATH (
-    echo TwinCAT project file does not exist!
+    echo TwinCAT project file does not exist! > error.txt> error.txt
     GOTO Exit
 ) ELSE (
-    echo TWINCAT_PROJECT_PATH found!
-    echo The filepath to the TwinCAT project file is: %TWINCAT_PROJECT_PATH%
+    echo TWINCAT_PROJECT_PATH found!> error.txt
+    echo The filepath to the TwinCAT project file is: %TWINCAT_PROJECT_PATH%> error.txt
 )
 
 rem Run the TwinCAT automation interface application
 IF EXIST "%TC_STATIC_ANALYSIS_LOADER_PATH%" (
-  "%TC_STATIC_ANALYSIS_LOADER_PATH%" -v %VISUAL_STUDIO_SOLUTION_PATH% -t %TWINCAT_PROJECT_PATH%
+  echo on
+  "%TC_STATIC_ANALYSIS_LOADER_PATH%" -v %VISUAL_STUDIO_SOLUTION_PATH% -t %TWINCAT_PROJECT_PATH% > error.txt
+  echo on	
 ) ELSE (
     echo The configured search path for TcStaticAnalysisLoader does not exist!
     GOTO Exit
 )
 
 rem %errorlevel% is a system wide environment variable that is set upon execution of a program
-echo Exit code is %errorlevel%
+echo Exit code is %errorlevel%> error.txt
 
-EXIT /B %errorlevel%
+//EXIT /B %errorlevel%
 
 :Exit
-echo Failed!
-EXIT /B 1
+
+echo Failed!> error.txt
+//EXIT /B 1
