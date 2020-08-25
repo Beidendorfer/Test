@@ -27,7 +27,7 @@ rem This is a windows batch file used to execute the TwinCAT static code analysi
 rem loader program. This batch file can be used in conjunction with some automation
 rem server software that launches this file once the static code analysis needs
 rem to be done.
-
+rem why
 rem USAGE:
 rem Set the below variable TC_STATIC_ANALYSIS_LOADER_PATH to the complete path of
 rem where the executable TcStaticAnalysisLoader.exe resides.
