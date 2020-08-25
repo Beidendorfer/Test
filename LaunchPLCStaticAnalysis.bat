@@ -22,7 +22,7 @@ rem IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 rem CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 rem -----------------------------------------------------------------------------
-
+rem -----------------------------------------------------------------------------
 rem This is a windows batch file used to execute the TwinCAT static code analysis
 rem loader program. This batch file can be used in conjunction with some automation
 rem server software that launches this file once the static code analysis needs
